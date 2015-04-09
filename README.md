@@ -14,9 +14,15 @@ Environment - MacOSX
 		source /etc/profile
 		rvm use --default
 
-	Appium Gem - https://rubygems.org/gems/appium_lib
+	Ruby Gems
 
-		gem install appium_lib
+		Bundler - https://rubygems.org/gems/bundler
+
+			gem install bundler
+
+		Appium - https://rubygems.org/gems/appium_lib
+
+			gem install appium_lib
 
 	Node / Appium - http://blog.teamtreehouse.com/install-node-js-npm-mac
 
