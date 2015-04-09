@@ -45,7 +45,7 @@ else
           # App is for local testing outside of CI as appium will install the app on its own
           app: "//users/brandongrimes/downloads/app-debug-1.0.0.151.apk", 
           
-          # App Package and Activity are needed when running on CI (Jenkins) as app will already be installed by fruitstrap
+          # App Package and Activity are needed when running on CI (Jenkins) as app will already be installed via ADB
           appPackage: "com.app.myapp",
           appActivity: "com.app.myapp.activity"
         }
