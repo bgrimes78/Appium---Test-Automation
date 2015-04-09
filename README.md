@@ -64,7 +64,7 @@ Environment - MacOSX
 							Android Example:
 
 							/Users/Shared/Jenkins/Home/eclipse/android-sdk-macosx/platform-tools/adb start-server
-							/Users/Shared/Jenkins/Home/eclipse/android-sdk-macosx/platform-tools/adb install /Users/Shared/Jenkins/Home/app-debug-1.0.0.155.apk 
+							/Users/Shared/Jenkins/Home/eclipse/android-sdk-macosx/platform-tools/adb install /Users/Shared/Jenkins/Home/app.apk 
 							cd path to 'spec' folder of scripts
 							rspec --tag OS:android
 
