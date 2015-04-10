@@ -104,7 +104,8 @@ Environment - MacOSX
 		Install on device
 			fruitstrap -i udid -b path_to_ipa
 
+Selenium Grid
 
-
-
-
+	http://docs.seleniumhq.org/docs/07_selenium_grid.jsp
+	
+	https://github.com/appium/appium/blob/master/docs/en/advanced-concepts/grid.md
