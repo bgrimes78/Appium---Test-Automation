@@ -104,6 +104,10 @@ Environment - MacOSX
 		Install on device
 			fruitstrap -i udid -b path_to_ipa
 
+
+Ruby iOS Command List: https://github.com/appium/ruby_lib/blob/master/docs/ios_docs.md
+
+
 Selenium Grid
 
 	http://docs.seleniumhq.org/docs/07_selenium_grid.jsp
