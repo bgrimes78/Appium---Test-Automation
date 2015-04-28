@@ -26,7 +26,7 @@ Environment - MacOSX
 
 	Node / Appium - http://blog.teamtreehouse.com/install-node-js-npm-mac
 
-		brew isntall node
+		brew install node
 		npm install -g appium
 		npm install wd
 
