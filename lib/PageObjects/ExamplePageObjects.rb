@@ -24,10 +24,32 @@ class Example
 	end
 	
 	def swipepages
-		swiperightiOS(10, 100, 100, 100, 500)
+		swiperightiOS(300, 200, 10, 200, 500)
 		#verify the screen
-		swipeleftiOS(100, 100, 10, 100, 500)
+		swipeleftiOS(10, 200, 300, 200, 500)
 		#verify the screen
+	end
+	
+	# Iterate through items on iOS, i.e. 20 buttons that all need to be clicked and un-clicked
+	
+	def tapItems
+
+		#need to add scrolling to be able to find all items
+
+		n = 1
+		item_displayed = true
+		
+		#this include n in the string
+		item = '//UIAApplication[1]/UIAWindow[1]/UIACollectionView[1]/UIACollectionCell[' + n.to_s + ']'
+		
+		begin
+			find_element(:xpath, item).click
+			n += 1
+			item = '//UIAApplication[1]/UIAWindow[1]/UIACollectionView[1]/UIACollectionCell[' + n.to_s + ']'
+			item_displayed = find_element(:xpath, item).displayed?
+		rescue
+			item_displayed = false
+		end while item_displayed == true
 	end
 
 end
