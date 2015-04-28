@@ -32,13 +32,34 @@ Environment - MacOSX
 
 	Appium GUI - http://appium.io/
 
-	Jenkins - http://jenkins-ci.org/
+	iOS Device Configuration
 
-		Configure System
+		Enable UI Automation in Settings - Developer
 
-			Global properties - Environment variables - List of key-value pairs
-				name = PATH
-				value = /usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin
+	iOS Apps
+
+		Compile the IPA using an 'IOS Developer' certificate and associated development provisioning profile
+			You will have to use the Debug IPA, not the Release
+
+		FruitStrap - http://www.stewgleadow.com/blog/2011/11/05/installing-ios-apps-on-the-device-from-the-command-line/
+
+			git clone git://github.com/ghughes/fruitstrap.git
+			cd fruitstrap
+			make fruitstrap
+
+		Install on device
+			fruitstrap -i udid -b path_to_ipa
+
+
+Ruby iOS Command List: https://github.com/appium/ruby_lib/blob/master/docs/ios_docs.md
+
+Jenkins - http://jenkins-ci.org/
+
+	Configure System
+
+		Global properties - Environment variables - List of key-value pairs
+			name = PATH
+			value = /usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin
 
 		Copy/Paste the following in /Users/Shared/Jenkins/Home
 
@@ -85,27 +106,6 @@ Environment - MacOSX
 		Install on device
 			/Users/Shared/Jenkins/Home/eclipse/android-sdk-macosx/platform-tools/adb start-server
 			/Users/Shared/Jenkins/Home/eclipse/android-sdk-macosx/platform-tools/adb install /Users/Shared/Jenkins/Home/app.apk 
-
-	iOS Device Configuration
-
-		Enable UI Automation in Settings - Developer
-
-	iOS Apps
-
-		Compile the IPA using an 'IOS Developer' certificate and associated development provisioning profile
-			You will have to use the Debug IPA, not the Release
-
-		FruitStrap - http://www.stewgleadow.com/blog/2011/11/05/installing-ios-apps-on-the-device-from-the-command-line/
-
-			git clone git://github.com/ghughes/fruitstrap.git
-			cd fruitstrap
-			make fruitstrap
-
-		Install on device
-			fruitstrap -i udid -b path_to_ipa
-
-
-Ruby iOS Command List: https://github.com/appium/ruby_lib/blob/master/docs/ios_docs.md
 
 
 Selenium Grid
